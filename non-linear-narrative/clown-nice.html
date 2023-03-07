@@ -7,8 +7,13 @@
             body{
                 background-color: black;
                 font-family: 'VT323', monospace;
-                font-size: 52pt;
+                font-size: 25pt;
                 color: rgb(255, 255, 255);
+            }
+
+            a {
+                color: red;
+                text-decoration: none;
             }
         
         </style>
@@ -21,9 +26,18 @@
     
     <body>
         <div style="width: 1200px; height: 900px; margin-left: auto; margin-right: auto;">
-            <img src="media/monitor.png" style="width:1200px; height: 900px; position: fixed; top:-50px;z-index: 900;">
+            <a href="teleport.html"><img src="media/monitor.png" style="width:1200px; height: 900px; position: fixed; top:-50px;z-index: 900;"></a>
 
-            <img src="media/safety.png" style="width:1200px; height: 900px; position: fixed; top:-50px;z-index: 10;">
+            <div style="position: fixed; left: 375px; top: 425px;z-index: 500;padding: 5px">
+                <p> he decides to help you by <br>teleporting you out of here!</p>
+            </div>
+
+            <audio autoplay>
+                <source src="media/clown.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+
+            <img src="media/clown-nice.png" style="width:1200px; height: 900px; position: fixed; top:-50px;z-index: 10;">
 
         </div>
 

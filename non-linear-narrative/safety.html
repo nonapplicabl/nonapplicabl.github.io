@@ -7,8 +7,13 @@
             body{
                 background-color: black;
                 font-family: 'VT323', monospace;
-                font-size: 52pt;
+                font-size: 25pt;
                 color: rgb(255, 255, 255);
+            }
+
+            a {
+                color: red;
+                text-decoration: none;
             }
         
         </style>
@@ -23,7 +28,34 @@
         <div style="width: 1200px; height: 900px; margin-left: auto; margin-right: auto;">
             <img src="media/monitor.png" style="width:1200px; height: 900px; position: fixed; top:-50px;z-index: 900;">
 
+            <div style="background-color:black; position: fixed; left: 375px; top: 450px;z-index: 500;padding: 5px">
+                <p> You made it to safety ?</p>
+            </div>
+
+            <div style="position: fixed; left: 375px; top: 450px;z-index: 501;padding: 5px">
+                <p> You made it to safety <a style="color:black" id="blink">?</a> </p>
+            </div>
+
+            <div style="width:100px; height:150px; position: fixed; left: 735px; top: 445px; z-index: 901; font-size: 75pt; color:red;"><a href="start3.html">&#9654</a></div>
+
+            <img src="media/safety.png" style="width:1200px; height: 900px; position: fixed; top:-50px;z-index: 10;">
+
+            <audio autoplay>
+                <source src="media/win.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+
         </div>
+
+        <script type="text/javascript">
+            var blink = 
+                document.getElementById('blink');
+      
+            setInterval(function () {
+                blink.style.opacity = 
+                (blink.style.opacity == 1 ? 0 : 1);
+            }, 1700); 
+        </script>
 
     </body>
 

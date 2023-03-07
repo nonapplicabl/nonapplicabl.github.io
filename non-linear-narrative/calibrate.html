@@ -7,10 +7,15 @@
             body{
                 background-color: black;
                 font-family: 'VT323', monospace;
-                font-size: 52pt;
+                font-size: 12pt;
                 color: rgb(255, 255, 255);
             }
 
+            a:link, a:visited {
+                color:aquamarine;
+                text-decoration: underline;
+            }
+        
         </style>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,18 +26,13 @@
     
     <body>
         <div style="width: 1200px; height: 900px; margin-left: auto; margin-right: auto;">
-            <img src="media/gameover.png" style="width:1200px; height: 900px; position: fixed; top:-50px;z-index: 900;">
+            <img src="media/monitor.png" style="width:1200px; height: 900px; position: fixed; top:-50px;z-index: 900;">
 
-            <div style="color:red;z-index: 901;position: fixed; left: 615px; top: 610px;z-index: 910">GAME OVER</div>
+            <div style="background-color: green;width:600px; height:550px; position: fixed; left: 275px; top: 25px; z-index: 890"></div>
 
-            <a href="start2.html" ><button type="button" style="z-index: 901;position: fixed; left: 700px; top: 700px;z-index: 910">close game</button></a>
+            <div style="font-size: 25pt; width:600px; height:50px; position: fixed; left: 455px; top: 670px; z-index: 901">resize the window until green screen fits into the monitor. <a href="intro.html">click here when finished.</a></div>
 
         </div>
-
-        <audio autoplay>
-            <source src="media/scare.mp3" type="audio/mp3">
-            Your browser does not support the audio element.
-        </audio>
 
     </body>
 
